@@ -1,4 +1,4 @@
-puppet-ubuntu-precise64
+Puppet Vagrant Ubuntu 13.10 amd64
 =======================
 
-puppet packages for ubuntu 12.10 amd64
+Setting up Ubuntu 13.10 amd64 with Puppet with Vagrant
