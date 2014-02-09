@@ -1,0 +1,25 @@
+*.gem
+*.rbc
+.bundle
+.config
+coverage
+InstalledFiles
+lib/bundler/man
+pkg
+rdoc
+spec/reports
+test/tmp
+test/version_tmp
+tmp
+
+# YARD artifacts
+.yardoc
+_yardoc
+doc/
+
+# puppet files
+auth.conf
+etckeeper-commit-post
+etckeeper-commit-pre
+fileserver.conf
+puppet.conf

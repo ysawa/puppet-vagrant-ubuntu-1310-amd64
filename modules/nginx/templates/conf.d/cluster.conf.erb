@@ -1,0 +1,37 @@
+server {
+  listen     80 default;
+  server_name localhost;
+
+  location / {
+    proxy_pass http://cluster;
+  }
+
+  error_page   500 502 503 504  /50x.html;
+  location = /50x.html {
+    root   /var/www;
+  }
+}
+
+server {
+  listen 443 default ssl;
+  server_name localhost;
+
+  ssl on;
+  ssl_certificate /etc/ssl/certs/nginx.crt;
+  ssl_certificate_key /etc/ssl/private/nginx.key;
+
+  location / {
+    proxy_pass http://cluster;
+  }
+
+  error_page   500 502 503 504  /50x.html;
+  location = /50x.html {
+    root   html;
+  }
+}
+
+upstream cluster {
+  server app0;
+  server app1;
+  server app2;
+}
