@@ -25,7 +25,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
   # config.vm.network :private_network, ip: "192.168.33.10"
-  config.vm.network :private_network, ip: "192.168.200.01"
+  config.vm.network :private_network, ip: "192.168.200.10"
 
   config.vm.hostname = "web0.localhost"
 

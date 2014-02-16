@@ -4,6 +4,7 @@ class ghc::install {
     'ghc',
     'ghc-prof',
     'ghc-doc',
+    'cabal-install',
   ]
   package { $ghc:
     require => [

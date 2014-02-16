@@ -35,6 +35,8 @@ node default {
   # include lha # TODO
   include language-pack::ja::install
   include ghc
+  include ufw
+  include security
 
   ssl::cert { 'server':
   }
