@@ -5,6 +5,7 @@ class ghc::install {
     'ghc-prof',
     'ghc-doc',
     'cabal-install',
+    'haskell-platform',
   ]
   package { $ghc:
     require => [
