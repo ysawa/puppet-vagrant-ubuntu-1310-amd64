@@ -1,6 +1,6 @@
 class graphicsmagick::install {
 
-  package { ['imagemagick']:
+  package { ['imagemagick', 'libmagickcore-dev']:
     require => [
       Class['ppa::repositories::nathan-renniewaldock-ppa'],
     ],
