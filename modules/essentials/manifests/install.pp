@@ -11,6 +11,10 @@ class essentials::install {
     'lv',
     'unzip',
     'flex', 'bison',
+    'default-jdk',
+    'default-jdk-doc',
+    'default-jre',
+    'zlibc',
   ]
   package { $essentials:
     require => [
